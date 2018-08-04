@@ -29,6 +29,10 @@ public class AccountTestData extends SObjectTestData {
 	public AccountTestData withName(String name) {
 		return (AccountTestData) with(Account.Name, name);
 	}
+    
+    public AccountTestData withAccNumber(String Accnumber) {
+		return (AccountTestData) with(Account.AccountNumber, Accnumber);
+	}
 	/* Create a "with" method for each property that can be set */
 	/**
 	* @description Builds the Account object.
